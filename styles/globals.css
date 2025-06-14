@@ -6,7 +6,9 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -18,4 +20,164 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.perspective-3d {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1e40af;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  border: 2px solid #3b82f6;
+}
+
+/* وجه أمامي */
+.front {
+  transform: translateZ(100px);
+}
+
+/* وجه خلفي */
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+/* يمين */
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+/* شمال */
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+/* قاعدة */
+.bottom {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.perspective-3d {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.face {
+  /* شكل الوجه */
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.cube .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  /* لون أزرق متدرج */
+  border-radius: 16px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.05),
+    0 10px 20px rgba(30, 64, 175, 0.3);
+  backdrop-filter: blur(2px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* TranslateZ = نصف حجم المكعب = 104px = 6.5rem */
+.face-1 {
+  transform: rotateY(0deg) translateZ(8rem);
+}
+.face-2 {
+  transform: rotateY(180deg) translateZ(8rem);
+}
+.face-3 {
+  transform: rotateY(90deg) translateZ(8rem);
+}
+.face-4 {
+  transform: rotateY(-90deg) translateZ(8rem);
+}
+.face-5 {
+  transform: rotateX(90deg) translateZ(8rem);
+}
+.face-6 {
+  transform: rotateX(-90deg) translateZ(8rem);
+}
+
+/* تأكد من أن الـ Sidebar يمتد بالكامل */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.8); /* يمكن تغييره حسب اللون اللي تحبه */
+  position: fixed;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.sidebar-enter-active,
+.sidebar-exit-active {
+  transition: transform 300ms ease-in-out;
+}
+
+.sidebar-enter {
+  transform: translateX(-100%); /* بدءً من خارج الشاشة في الجهة اليسرى */
+}
+
+.sidebar-enter-done {
+  transform: translateX(0); /* بعد الفتح يظهر بشكل كامل */
+}
+
+.sidebar-exit {
+  transform: translateX(0); /* لما تنغلق */
+}
+
+.sidebar-exit-done {
+  transform: translateX(-100%); /* لما تختفي */
+}
+
+.swiper-wrapper {
+  will-change: transform;
+}
+
+.slick-track {
+  height: 70px;
+}
+
+@media only screen and (max-width: 521px) {
+  .slick-track {
+    height: 40px;
+  }
+}
+
+.Toastify {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  min-height: 0 !important;
 }
