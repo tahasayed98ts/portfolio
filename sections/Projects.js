@@ -25,14 +25,14 @@ const projects = [
     titleKey: "project_title_ui_library",
     descKey: "project_desc_ui_library",
     tech: ["Next", "Tailwind", "Redux"],
-    link: "https://druco-web-app.vercel.app/",
+    link: "https://druco-app.vercel.app/",
     image: "/public/projects-image/react.png", // مسار الصورة
   },
   {
     titleKey: "project_title_ui_React",
     descKey: "project_desc_ui_React",
     tech: ["React", "Tailwind"],
-    link: "https://dataanalytics.surge.sh/",
+    link: "https://react-ui-beta-nine.vercel.app/",
     image: "/public/projects-image/react.png", // مسار الصورة
   },
 ];
