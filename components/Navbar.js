@@ -142,12 +142,12 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="md:hidden lg:hidden ">
+        <div className="md:hidden lg:hidden flex justify-center items-center gap-2">
           {/* زر التبديل بين الوضع الليلي والنهاري */}
           {mounted && (
             <button
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className="text-4xl"
+              className="text-3xl"
               title="Toggle Theme"
             >
               {theme === "light" ? "🌙" : "☀️"}
@@ -155,11 +155,11 @@ export default function Navbar() {
           )}
 
           {/* زر تغيير اللغة */}
-          <button onClick={switchLang} className="ml-2 " title={t("toggle")}>
+          <button onClick={switchLang} className="" title={t("toggle")}>
             <img
               src={locale === "en" ? "/flags/eg.webp" : "/flags/uk.webp"}
               alt="Language Switch"
-              className=" w-6 h-6 rounded-full grayscale hover:grayscale-0 transition"
+              className=" w-6 h-6  rounded-full grayscale hover:grayscale-0 transition"
             />
           </button>
         </div>
@@ -167,7 +167,7 @@ export default function Navbar() {
         {/* زر Hamburger يظهر على الشاشات الصغيرة */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-3xl hover:text-[#1e3a8a] dark:hover:text-emerald-400"
+          className="md:hidden text-4xl hover:text-[#1e3a8a] dark:hover:text-emerald-400"
         >
           ☰
         </button>
@@ -246,24 +246,26 @@ export default function Navbar() {
           </Scrollspy>
 
           {/* زر التبديل بين الوضع الليلي والنهاري */}
-          {mounted && (
-            <button
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className=" ml-4 text-4xl"
-              title="Toggle Theme"
-            >
-              {theme === "light" ? "🌙" : "☀️"}
-            </button>
-          )}
+          <div className="flex justify-start items-center gap-2">
+            {mounted && (
+              <button
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                className="mx-2 text-4xl"
+                title="Toggle Theme"
+              >
+                {theme === "light" ? "🌙" : "☀️"}
+              </button>
+            )}
 
-          {/* زر تغيير اللغة */}
-          <button onClick={switchLang} className="ml-4 " title={t("toggle")}>
-            <img
-              src={locale === "en" ? "/flags/eg.webp" : "/flags/uk.webp"}
-              alt="Language Switch"
-              className=" w-7 h-7 rounded-full grayscale hover:grayscale-0 transition"
-            />
-          </button>
+            {/* زر تغيير اللغة */}
+            <button onClick={switchLang} className="" title={t("toggle")}>
+              <img
+                src={locale === "en" ? "/flags/eg.webp" : "/flags/uk.webp"}
+                alt="Language Switch"
+                className=" w-7 h-7 a rounded-full grayscale hover:grayscale-0 transition"
+              />
+            </button>
+          </div>
         </div>
       )}
     </header>

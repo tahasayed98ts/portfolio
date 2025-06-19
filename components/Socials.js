@@ -2,7 +2,7 @@ export default function Socials() {
   return (
     <div className="fixed bottom-0 left-6 hidden md:flex flex-col items-center space-y-4 z-40">
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/tahasayed98ts"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-emerald-400 transition"
@@ -10,7 +10,7 @@ export default function Socials() {
         <i className="fab fa-github text-xl"></i>
       </a>
       <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://www.linkedin.com/in/taha-sayed-3852281bb/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-emerald-400 transition"

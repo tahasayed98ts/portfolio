@@ -118,7 +118,7 @@ export default function WarpOverlay({ intensity = 0.1 }) {
                   <p className="text-sm">{t("whats_desc")}</p>
                   <a href="https://wa.me/+0201229866965" target="_blank">
                     <div
-                      className="my-10 flex justify-between bg-white/30 backdrop-blur-none p-2 rounded-lg ease-in duration-100 hover:bg-black"
+                      className="my-5 flex justify-between bg-white/30 backdrop-blur-none p-2 rounded-lg ease-in duration-100 hover:bg-stone-700"
                       data-aos="fade-up"
                     >
                       <img
@@ -128,6 +128,49 @@ export default function WarpOverlay({ intensity = 0.1 }) {
                         className="w-6 h-6 mx-2"
                       />
                       <p className="text-[10px]">{t("whats_app")} </p>
+                      <img
+                        src="/projects-image/profile.png"
+                        alt="profile"
+                        loading="lazy"
+                        className="w-6 h-6 rounded-full mx-2"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/taha-sayed-3852281bb/"
+                    target="_blank"
+                  >
+                    <div
+                      className="my-5 flex justify-between bg-white/30 backdrop-blur-none p-2 rounded-lg ease-in duration-100 hover:bg-stone-700"
+                      data-aos="fade-up"
+                    >
+                      <img
+                        src="/projects-image/linkedin.png"
+                        alt="linkedin"
+                        loading="lazy"
+                        className="w-6 h-6 mx-2"
+                      />
+                      <p className="text-[10px]">{t("linked_in")} </p>
+                      <img
+                        src="/projects-image/profile.png"
+                        alt="profile"
+                        loading="lazy"
+                        className="w-6 h-6 rounded-full mx-2"
+                      />
+                    </div>
+                  </a>
+                  <a href="https://github.com/tahasayed98ts" target="_blank">
+                    <div
+                      className="my-5 flex justify-between bg-white/30 backdrop-blur-none p-2 rounded-lg ease-in duration-100 hover:bg-stone-700"
+                      data-aos="fade-up"
+                    >
+                      <img
+                        src="/projects-image/githup.png"
+                        alt="githup"
+                        loading="lazy"
+                        className="w-6 h-6 mx-2"
+                      />
+                      <p className="text-[10px]">{t("git_hup")} </p>
                       <img
                         src="/projects-image/profile.png"
                         alt="profile"

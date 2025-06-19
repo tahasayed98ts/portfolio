@@ -11,7 +11,7 @@ const projects = [
     titleKey: "project_title_portfolio",
     descKey: "project_desc_portfolio",
     tech: ["Next.js", "Tailwind", "Framer Motion"],
-    link: "https://tahadev.vercel.app",
+    link: "/",
     image: "/public/projects-image/react.png", // مسار الصورة
   },
   {
@@ -43,7 +43,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="pt-10 pb-28 lg:pb-36 md:pb-36 px-6 bg-white dark:bg-gradient-to-r from-gray-900 to-gray-800 text-black dark:text-white"
+      className="py-20 lg:pb-36 md:pb-36 px-6 bg-white dark:bg-gradient-to-r from-gray-900 to-gray-800 text-black dark:text-white"
     >
       <div className="max-w-6xl mx-auto" data-aos="fade-up">
         <h2 className={`${firaCode.className} text-3xl font-bold mb-10`}>

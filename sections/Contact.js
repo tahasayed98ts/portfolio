@@ -31,16 +31,13 @@ export default function Contact() {
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       );
 
-      toast.success(t("toast_messga_seccess")),
-        
-      formRef.current.reset();
+      toast.success(t("toast_messga_seccess")), formRef.current.reset();
     } catch (error) {
       console.error("Caught error:", error);
       toast.error(
         t("toast_messga_failed") +
           (error?.response?.data?.error || error?.message || "خطأ غير معروف")
-      )
-        
+      );
     } finally {
       setIsLoading(false);
     }
@@ -103,7 +100,7 @@ export default function Contact() {
             className={`px-6 py-2 rounded text-white transition ${
               isLoading
                 ? "opacity-50 cursor-not-allowed bg-gray-500"
-                : "bg-blue-600 hover:bg-blue-700 dark:bg-emerald-600 dark:hover:bg-emerald-800"
+                : "bg-black hover:bg-blue-700 dark:bg-emerald-600 dark:hover:bg-emerald-800"
             }`}
           >
             {isLoading ? t("form_loading") : t("form_submit")}
