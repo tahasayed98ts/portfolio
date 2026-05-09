@@ -50,6 +50,9 @@
   "project_title_lms": "Engosoft Platform",
   "project_desc_lms": "An integrated and powerful e-learning platform built using Odoo ERP. We offer a seamless and effective learning experience that includes course management, student progress tracking, and interactive communication, in addition to comprehensive management of educational operations thanks to its integration with Odoo.",
 
+  "project_title_aktay": "Aktay Law Firm",
+  "project_desc_aktay": "A full-stack law firm platform built with Next.js 16, React 19, Node.js, and MongoDB. Features include dynamic content management, secure authentication, custom animations, image uploads with Cloudinary, and responsive modern UI/UX.",
+
   "project_title_ui_library": "Druco App",
   "project_desc_ui_library": "Reusable components built with Next & Tailwind, used across internal tools and apps.",
 

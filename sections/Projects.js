@@ -22,6 +22,26 @@ const projects = [
     image: "/public/projects-image/react.png", // مسار الصورة
   },
   {
+    titleKey: "project_title_aktay",
+    descKey: "project_desc_aktay",
+
+    tech: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind v4",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Cloudinary",
+      "CSS Animations",
+    ],
+
+    link: "https://aktaylawfirmeg.com/",
+    image: "/projects-image/aktay-law-firm.png",
+  },
+  {
     titleKey: "project_title_ui_library",
     descKey: "project_desc_ui_library",
     tech: ["Next", "Tailwind", "Redux"],
